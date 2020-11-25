@@ -1,6 +1,7 @@
 package pages;
 
 import com.epam.healenium.SelfHealingDriver;
+import com.epam.healenium.annotation.DisableHealing;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.base.BasePage;
@@ -19,6 +20,7 @@ public class LoginPage extends BasePage {
     @FindBy( id = "passwd" )
     private WebElement loginPassword;
 
+//    @DisableHealing
     public LoginPage fillLoginEmail(String email){
         this.loginEmail.sendKeys(email);
         return this;

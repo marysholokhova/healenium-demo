@@ -20,8 +20,4 @@ public class LoginTest extends BaseTest {
         assert true;
     }
 
-    @Test
-    public void testLoginWithoutHealing(){
-
-    }
 }

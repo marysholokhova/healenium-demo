@@ -14,7 +14,6 @@ public class BaseTest {
     static public void setUp() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
-//        options.setHeadless(true);
         WebDriver delegate = new ChromeDriver(options);
         driver = SelfHealingDriver.create(delegate);
         driver.manage().window().maximize();
